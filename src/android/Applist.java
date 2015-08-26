@@ -85,7 +85,7 @@ public class Applist extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException 
     {
-        if(action.equals("get"))
+        if(action.equals("getApps"))
         { 
             cordova.getThreadPool().execute(new Runnable() 
             {
