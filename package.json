@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-applist",
-  "version": "0.1.7",
+  "version": "0.1.12",
   "description": "Applist Plugin",
   "cordova": {
     "id": "org.jmrezayi2.Applist",
