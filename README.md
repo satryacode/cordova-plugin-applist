@@ -6,7 +6,8 @@ Fork of https://github.com/jmrezayi2/Applist
         
         var success = function(app_list) { alert(JSON.stringify((app_list)); };
         var error = function(err) { alert("Oopsie! " + err); };
-        Applist.createEvent(success, error)
+        Applist.getApps(success, error) // get installed apps
+        Applist.getAllApps(success, error) // get all apps (including system apps)
         
 ##Detailed usage:        
 Gives the list of all apps installed on the phone in a JSON object and also saves an icon of each of them in app data dir ;        
