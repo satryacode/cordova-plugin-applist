@@ -1,33 +1,43 @@
-#A plugin to give the list of all installed apps **WITHOUT** their icons
+# cordova plugin applist
+
+**Applist** is a cordova plugin to give the list of all installed apps **WITHOUT** their icons.
 
 Fork of https://github.com/jmrezayi2/Applist
 
-##Usage:
-        
-        Applist.getApps(
-            function(app_list) {
-                //successCallback
-                alert(JSON.stringify((app_list));
-            },
-            function(err) {
-                //errorCallback
-                alert("Error! " + err);
-            }
-        ) // get installed apps
-        
-        OR
-        
-        Applist.getAllApps(function(success){}, function(error){}) // get all apps (including system apps)
-        
-##Detailed usage:        
+## Supported Platforms
+
+- Android 6.0 and Android 7.0 (*haven't tested in < Android 6)
+
+## Installation
+
+Cordova:
+
+    cordova plugin add https://github.com/satryacode/cordova-plugin-applist.git
+
+## Usage:
+
+```javascript
+Applist.getApps(
+    function(app_list) {
+        //successCallback
+        alert(JSON.stringify((app_list)));
+    },
+    function(err) {
+        //errorCallback
+        alert("Error! " + err);
+    }
+);
+```
+
+## Detailed usage: 
+
 Gives the list of all apps installed on the phone in a JSON object and also saves an icon of each of them in app data dir ;        
 
 JSONObject info:
 * app_list.info.id = app id (package name)
 * app_list.info.name = is app name 
 
-
-##To Do:
+## TO-DO:
 
 **Add iOS support**
 
