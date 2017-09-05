@@ -4,17 +4,20 @@ Fork of https://github.com/jmrezayi2/Applist
 
 ##Usage:
         
-        var success = function(app_list) { 
-                alert(JSON.stringify((app_list)); 
-        };
-        var error = function(err) { 
-                alert("Error: " + err); 
-        };
-        Applist.getApps(success, error) // get installed apps
+        Applist.getApps(
+            function(app_list) {
+                //successCallback
+                alert(JSON.stringify((app_list));
+            },
+            function(err) {
+                //errorCallback
+                alert("Error! " + err);
+            }
+        ) // get installed apps
         
         OR
         
-        Applist.getAllApps(success, error) // get all apps (including system apps)
+        Applist.getAllApps(function(success){}, function(error){}) // get all apps (including system apps)
         
 ##Detailed usage:        
 Gives the list of all apps installed on the phone in a JSON object and also saves an icon of each of them in app data dir ;        
