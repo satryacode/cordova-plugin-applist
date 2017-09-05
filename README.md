@@ -6,7 +6,7 @@ Fork of https://github.com/jmrezayi2/Applist
 
 ## Supported Platforms
 
-- Android 6.0 and Android 7.0 (*haven't tested in < Android 6)
+- Android 6.0 and Android 7.0 (*haven't tested below Android 6.0)
 
 ## Installation
 
